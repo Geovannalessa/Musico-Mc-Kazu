@@ -10,7 +10,9 @@
 p:nth-child(2){
     background-color: rosybrown;
 }
-
+ a{
+     color: rgb(14, 11, 11);
+}
 
 /* .cor{
     min-block-size: 100%;
