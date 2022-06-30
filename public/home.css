@@ -5,11 +5,12 @@ body{
 }
 #conteiner{
     display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto auto;
     grid-template-areas: 
     "header header header header"
     "letras letras som som"
+    "link-youtube link-youtube link-youtube link-youtube"
     "sobre sobre sobre sobre"
     "footer footer footer footer";
 }
@@ -24,18 +25,18 @@ body{
     background-color: rgba(0, 0, 0, 0.34);
     border: 5px solid white;
     border-left: none;
-    height: 600px;
+    border-right: none;
+    height: 700px;
     text-align: center;
-    width: 515px;
+    width: 520px;
     background-size: cover;
     /* font-family: 'Raleway Dots', cursive; */
 }
 #letra-da-musica{
     overflow-y: scroll;
- 
     height: 270px;
     padding: 20px 30px 40px 40px;
-    margin: 20px 40px 20px;
+    margin: 50px 40px 80px;
 }
 h3{
     font-family:'Raleway Dots', cursive;
@@ -43,17 +44,23 @@ h3{
     font-weight:normal;
 
 }
-.linha_verde{
-    border: rgba(45, 84, 31, 1) solid 1px;
+.linha-verde{
+    border-bottom: rgba(51, 112, 31, 0.291) solid 1px;
+    border-radius: 94px;
 }
+p{
+    margin-bottom: 30px;
+}
+
 #som{
     grid-area: som;
     display: flex;
     background-image: url(./jonas-preto-branco.jpg);
     border: 5px solid white;
     border-right: none;
+    border-left: 0;
     margin: 0;
-    height: 600px;
+    height: 700px;
     width: 695px;
     background-size: cover;
 
@@ -83,6 +90,28 @@ ul{
 #tocador:hover{
     background-color: rgba(68, 81, 69, 1);
     border: 7px solid rgba(32, 137, 36, 0);
+}
+
+#link-youtube{
+    grid-area: link-youtube;
+    background-color: rgba(24, 26, 23, 1);
+    height: 90px;
+    width: 1223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.o-link>a{
+    font-size: 25px;
+    color: white;
+    font-family:'Raleway Dots', cursive;
+    text-decoration:none;
+
+}
+img{
+    height: 50px;
+    width: 59px;
+    margin-right: 70px;
 }
 #sobre{
     grid-area: sobre;
