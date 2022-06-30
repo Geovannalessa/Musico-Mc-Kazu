@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 body{
     background-color: rgb(255, 255, 255);
     margin: 0%;
@@ -26,6 +27,24 @@ body{
     height: 600px;
     text-align: center;
     width: 515px;
+    background-size: cover;
+    /* font-family: 'Raleway Dots', cursive; */
+}
+#letra-da-musica{
+    overflow-y: scroll;
+ 
+    height: 270px;
+    padding: 20px 30px 40px 40px;
+    margin: 20px 40px 20px;
+}
+h3{
+    font-family:'Raleway Dots', cursive;
+    font-size: 40px;
+    font-weight:normal;
+
+}
+.linha_verde{
+    border: rgba(45, 84, 31, 1) solid 1px;
 }
 #som{
     grid-area: som;
@@ -45,7 +64,8 @@ body{
     width: 498px;
     margin: 85px 1px 0px 109px;
     padding: 93px 45px 80px 46px;
-    border-radius: 501px 584px 905px 778px;
+    border-radius: 501px 584px 906px 778px;
+    overflow-y: auto;
 }
 ul{
     padding: 0;
@@ -57,8 +77,8 @@ ul{
     list-style: none;
     height: auto;
     
-    margin-bottom: 5px;
-    padding: 7px 0 7px 30px;
+    margin-bottom: 10px;
+    padding: 10px 0 7px 30px;
 }
 #tocador:hover{
     background-color: rgba(68, 81, 69, 1);
