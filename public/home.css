@@ -4,7 +4,7 @@ body{
 }
 #conteiner{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto ;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header header"
@@ -14,32 +14,38 @@ body{
 }
 #header{
     grid-area: header;
-    background-color: rgba(24, 26, 23, 1);
+    background-color: rgb(2 2 2 / 96%);
     height: 300px;
     width: auto;
 }
 #letras{
     grid-area: letras;
     background-color: rgba(0, 0, 0, 0.34);
-    border: 7px white solid;
-    height: 900px;
-    width: 50%;
+    border: 5px solid white;
+    border-left: none;
+    height: 600px;
     text-align: center;
+    width: 515px;
 }
 #som{
     grid-area: som;
     display: flex;
-    background-image: url("./25440159_2005831052768346_411410525247773767_o.jpg");
-    
-    border: 7px white solid;
+    background-image: url(./jonas-preto-branco.jpg);
+    border: 5px solid white;
+    border-right: none;
+    margin: 0;
+    height: 600px;
+    width: 695px;
+    background-size: cover;
 
 }
 #elipse{
-    background-color: rgb(228 241 254 / 27%);
-    height: 300px;
-    width: 500px;
-    margin: 160px 60px 60px 60px;
-    padding: 60px 30px;
+    background-color: rgb(60 57 57 / 15%);
+    height: 326px;
+    width: 498px;
+    margin: 85px 1px 0px 109px;
+    padding: 93px 45px 80px 46px;
+    border-radius: 501px 584px 905px 778px;
 }
 ul{
     padding: 0;
