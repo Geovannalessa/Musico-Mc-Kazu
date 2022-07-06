@@ -154,5 +154,13 @@ img{
 }
 #footer{
     grid-area: footer;
-    background-color: pink;
+    margin-top: 10px;
+}
+.informacoes_geo{
+    height: 240px;
+    padding-top: 20px;
+    padding-left: 30px;
+    background-color: rgb(180 149 203);
+    border: black 3px solid;
+    border-radius: 20px;
 }
