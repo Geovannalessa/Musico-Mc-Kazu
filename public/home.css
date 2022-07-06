@@ -38,8 +38,25 @@ body{
     padding: 20px 30px 40px 40px;
     margin: 50px 40px 80px;
 }
+#letra-da-musica::-webkit-scrollbar {
+    /* width: 40px; */
+    background-color: #f0f8ff03;
+    border: 2px #00000008 solid;
+}
+
+#letra-da-musica::-webkit-scrollbar-thumb {
+    background-color: #959595;
+    /* border-radius: 20px; */
+    border: 1px solid #1212123d;
+    height: 20px;
+}
+#letra-da-musica::-webkit-scrollbar-track {
+    background: #37373700;
+    width: 1px;
+}
+
 h3{
-    font-family:'Raleway Dots', cursive;
+    font-family:'Raleway Dots', 'Courier New', Courier, monospace;
     font-size: 40px;
     font-weight:normal;
 
@@ -73,6 +90,24 @@ p{
     padding: 93px 45px 80px 46px;
     border-radius: 501px 584px 906px 778px;
     overflow-y: auto;
+}
+
+#elipse::-webkit-scrollbar {
+        /* width: 40px; */
+        background-color: #f0f8ff00;
+        border: #8080802b 1px solid;
+        /* height: fit-content;*/
+}
+
+#elipse::-webkit-scrollbar-thumb {
+background-color: #050704;
+    /* border-radius: 20px; */
+    border: 1px solid rgba(208, 208, 208, 0.24);;
+    height: 20px;
+}
+#elipse::-webkit-scrollbar-track {
+    background: #37373700;
+    width: 1px;
 }
 ul{
     padding: 0;
