@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
-
+@font-face {
+    font-family: 'Press Start 2P' ;
+    src: url("./PressStart2P-Regular.ttf");
+}
 /* @media (max-width:1171px) {
     main{
         grid-template-columns: 1fr;
         grid-template-areas:"header" "letras_e_som" "youtube" "sobre" "footer";
     } */
-@media(max-width:1171px) {
+@media(max-width:1161px) {
     #letras_e_som{
         display: flex;
         flex-direction:column-reverse;
@@ -283,10 +286,85 @@ img {
 
 .informacoes_geo {
     grid-area: footer;
-    height: 240px;
+    
+    height: 220px;
+    font-family: 'Press Start 2P', cursiva;
     padding-top: 20px;
-    padding-left: 30px;
-    background-color: rgb(180 149 203);
-    border: black 3px solid;
-    border-radius: 20px;
+   
+    background-color: rgba(164, 131, 189, 0.466);
+    border: rgb(136, 51, 51) 4px groove;
+    border-top: 20px rgba(0, 0, 0, 0.093) solid;
+    font-size: larger;
+    margin-top: 60px;
+    
+}
+
+.informacoes_geo>ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    align-self: center;
+    
+    background-color: #987eaf60;
+    padding:10px 0 20px 0 ;
+}
+.informacoes_geo>ul>li{
+    list-style: none;
+    padding-bottom: 20px;
+    
+}
+#desenvolvedora{
+    margin-left:0 ;
+    align-self:center;
+    font-size: 13px;
+    width:fit-content;
+    color: rgba(0, 0, 0, 0.622);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+
+}
+#geovanna{
+/* position: absolute */
+width: fit-content;
+height: 52px;
+color: rgba(255, 255, 255, 0.101);
+-webkit-text-stroke: 1px #FFF;
+font-weight: 400;
+font-size: 24px;
+line-height: 48px;
+}
+#press{
+    color: white;
+    padding-bottom: 15px;
+    font-size: 10px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.221);
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    padding-left: 75px;
+    list-style: none;
+}
+
+#git{
+    border: ridge 3px  rgba(17, 210, 36, 0.498) ; 
+    background-color: rgba(255, 255, 255, 0.597);
+    height: 30px;
+    width: 35px;
+}
+#git:hover{
+    border: ridge 3px  rgba(238, 214, 0, 0.323); 
+    background-color: rgba(255, 255, 255, 0.745);
+}
+#linkedin{
+    border: ridge 3px  rgba(17, 210, 36, 0.52); 
+    background-color: rgba(255, 255, 255, 0.597);
+    height: 22px;
+    width: 22px;
+    padding: 4px 8px 4px 8px;
+
+    }
+#linkedin:hover{
+    border: ridge 3px  rgba(238, 214, 0, 0.432); 
+    background-color: rgba(255, 255, 255, 0.745);
 }
