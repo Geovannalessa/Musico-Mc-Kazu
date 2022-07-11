@@ -292,7 +292,7 @@ img {
     padding-top: 20px;
    
     background-color: rgba(164, 131, 189, 0.466);
-    border: rgb(136, 51, 51) 4px groove;
+    border: rgba(248, 0, 0, 0.423) 4px groove;
     border-top: 20px rgba(0, 0, 0, 0.093) solid;
     font-size: larger;
     margin-top: 60px;
@@ -351,10 +351,15 @@ line-height: 48px;
     background-color: rgba(255, 255, 255, 0.597);
     height: 30px;
     width: 35px;
+    animation-name: animacao_git;
+    animation-duration: 3s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
 }
 #git:hover{
-    border: ridge 3px  rgba(238, 214, 0, 0.323); 
+    border: ridge 3px  rgba(238, 214, 0, 0.932); 
     background-color: rgba(255, 255, 255, 0.745);
+    animation-play-state: paused;
 }
 #linkedin{
     border: ridge 3px  rgba(17, 210, 36, 0.52); 
@@ -362,9 +367,31 @@ line-height: 48px;
     height: 22px;
     width: 22px;
     padding: 4px 8px 4px 8px;
-
+    animation-name: animacao_linkedin;
+    animation-duration: 3s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
     }
 #linkedin:hover{
-    border: ridge 3px  rgba(238, 214, 0, 0.432); 
-    background-color: rgba(255, 255, 255, 0.745);
+    border: ridge 3px  rgba(238, 214, 0, 0.826); 
+    background-color: rgba(255, 255, 255, 0.823);
+    animation-play-state: paused;
+
+}
+@keyframes animacao_git{
+    to{
+        height: 30px;
+        width: 35px;}
+    from{opacity:0% ;
+    box-shadow: #050704 10px inset ;}
+}
+@keyframes animacao_linkedin{
+    to{
+        height: 22px;
+        width: 22px;
+        padding: 4px 8px 4px 8px;
+    }
+    from{
+        opacity:0% ;
+    }
 }
