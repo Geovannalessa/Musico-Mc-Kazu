@@ -88,14 +88,31 @@ header {
 }
 
 #primeira_linha>#salve {
-    margin: 0%;
+    margin: 0 auto;
     margin-right: 20px;
-    display: flex;
-    font-size: 30px;
+    /* display: flex; */
+    font-size: 20px;
     justify-content: flex-end;
-
+    height: fit-content;
+   white-space: nowrap;
+   overflow: hidden;
 }
-
+#primeira_linha>#salve {
+    border-right: rgba(255, 255, 255, 0.227) 1px solid;
+    animation:cursor 500ms steps(70) infinite normal, typing 4s steps(40) 1s normal both;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 11em;
+    }
+}
+@keyframes cursor{
+    from{border-right: rgba(255, 255, 255, 0.145) 1px solid;}
+    to{border-right: transparent}
+}
 #conteiner_opcoes {
     display: grid;
     list-style: none;
@@ -108,14 +125,16 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 170px;
-
     text-decoration: none;
     color: white;
     margin-left: 20px;
     font-size: 20px;
 
 }
-
+#conteiner_opcoes>li>a:hover{
+    background-color: rgba(255, 255, 255, 0.048);
+    
+}
 #letras_e_som {
     display: flex;
     grid-area: letras_e_som;
