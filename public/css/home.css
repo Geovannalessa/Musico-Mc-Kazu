@@ -1,19 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
-body{
+
+/* @media (max-width:1171px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas:"header" "letras_e_som" "youtube" "sobre" "footer";
+    } */
+@media(max-width:1171px) {
+    #letras_e_som{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    #letras_e_som>#letras{
+        width: 100%;
+    }
+    #letras_e_som>#som{
+        padding: 30px;
+        height: 500px;
+        width: 100%;
+    }
+} 
+@media(max-width:501px){
+    header{
+        height: 20px;
+    }
+    header>#primeira_linha{
+        display: inline-block;
+        flex-direction: column;
+    }
+    header>#primeira_linha>#titulo{
+        font-size: 35px;
+    }
+    header>#primeira_linha>#salve{
+        font-size:small;
+    }
+    header>#conteiner_opcoes{
+        gap: 2px;
+    }
+    header>#conteiner_opcoes>li>a{
+        margin-top: 20px;
+        font-size: small;
+        gap: 2px;
+    }
+}
+
+body {
     background-color: rgb(16, 16, 16);
     margin: 0%;
-    max-width: 100%;
-    min-width: 320px;
+    display: grid;
+    width: 100%;
+    /* min-width: 1171px;  */
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'header'
+        'letras_e_som'
+        'youtube'
+        'sobre'
+        'footer';
 }
-header{
+
+header {
+    grid-area: header;
     background-color: rgb(2 2 2 / 96%);
     height: 300px;
-    width: auto;
+    width: 100%;
+    color: white;
+    font-family: 'Raleway Dots', cursive;
 }
-#letras_e_som{
+
+#primeira_linha {
     display: flex;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
 }
-#letras{
+
+#primeira_linha>#titulo {
+    font-size: 40px;
+    margin: 0%;
+    margin-left: 20px;
+    height: fit-content;
+    text-shadow: white;
+}
+
+#primeira_linha>#salve {
+    margin: 0%;
+    margin-right: 20px;
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+
+}
+
+#conteiner_opcoes {
+    display: grid;
+    list-style: none;
+    text-decoration: none;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+}
+
+#conteiner_opcoes>li>a {
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+#letras_e_som {
+    display: flex;
+    grid-area: letras_e_som;
+}
+
+#letras {
+    grid-area: letras;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
@@ -22,18 +128,20 @@ header{
     border-bottom: 5px double rgba(63, 61, 61, 0.45);
     height: 750px;
     width: 45%;
-    
+
 
     background-size: cover;
     /* font-family: 'Raleway Dots', cursive; */
 }
-#letra-da-musica{
+
+#letra-da-musica {
     overflow-y: scroll;
     height: 370px;
     padding: 20px 30px 0px 40px;
     margin: 50px 40px 80px;
     font-size: large;
 }
+
 #letra-da-musica::-webkit-scrollbar {
     /* width: 40px; */
     background-color: #f0f8ff03;
@@ -46,25 +154,30 @@ header{
     border: 1px solid #1212123d;
     height: 20px;
 }
+
 #letra-da-musica::-webkit-scrollbar-track {
     background: #37373700;
     width: 1px;
 }
-h3{
-    font-family:'Raleway Dots', 'Courier New', Courier, monospace;
-    font-size: 40px;
-    font-weight:normal;
+
+h3 {
+    font-family: 'Raleway Dots', 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: normal;
 
 }
-.linha-verde{
+
+.linha-verde {
     border-bottom: rgba(51, 112, 31, 0.291) solid 1px;
     border-radius: 94px;
 }
-p{
+
+p {
     margin-bottom: 30px;
 }
 
-#som{
+#som {
+    grid-area: som;
     background-image: url(../img/jonas-preto-branco.jpg);
     border: 5px double rgba(156, 154, 154, 0.325);
     border-right: none;
@@ -74,44 +187,40 @@ p{
     background-size: cover;
     display: flex;
 }
-#imagem_elipse>img{
-    position:absolute;
-    background-color: rgba(144, 29, 29, 0);
-    padding-left: 50px;
-    height: 600px;
-    width: 500px;
-    margin: 20px;
-}
-#overflow_musicas{
+
+#overflow_musicas {
     background-color: rgba(255, 255, 0, 0);
-    overflow-y:scroll;
+    overflow-y: scroll;
     padding-right: 30px;
     height: 400px;
-    width:max-content;
-   justify-content: center;
+    width: max-content;
+    justify-content: center;
     align-items: center;
-    text-align:left;
+    text-align: left;
     margin: auto;
 }
 
 #overflow_musicas::-webkit-scrollbar {
-        /* width: 40px; */
-        background-color: #f0f8ff00;
-        border: #8080802b 1px solid;
-        /* height: fit-content;*/
+    /* width: 40px; */
+    background-color: #f0f8ff00;
+    border: #8080802b 1px solid;
+    /* height: fit-content;*/
 }
 
 #overflow_musicas::-webkit-scrollbar-thumb {
-background-color: #050704;
+    background-color: #050704;
     /* border-radius: 20px; */
-    border: 1px solid rgba(208, 208, 208, 0.24);;
+    border: 1px solid rgba(208, 208, 208, 0.24);
+    ;
     height: 20px;
 }
+
 #overflow_musicas::-webkit-scrollbar-track {
     background: #37373700;
     width: 1px;
 }
-#tocador{
+
+#tocador {
     font-size: 16px;
     background-color: rgba(68, 81, 69, 1);
     border-radius: 30px;
@@ -121,15 +230,20 @@ background-color: #050704;
     width: 400px;
     min-width: 300px;
     margin-bottom: 10px;
-    margin-left:12px ;
+    margin-left: 12px;
     padding: 10px 0 7px 30px;
 }
+#tocador:hover{
+    background-color: rgb(51, 57, 51);
+    border:none;
 
-ul{
+}
+ul {
     padding: 0;
 }
 
-#link-youtube{
+#link-youtube {
+    grid-area: youtube;
     background-color: rgba(24, 26, 23, 1);
     height: 90px;
     width: 100%;
@@ -137,34 +251,38 @@ ul{
     justify-content: center;
     align-items: center;
 }
-.o-link>a{
+
+.o-link>a {
     font-size: 25px;
     color: white;
-    font-family:'Raleway Dots', cursive;
-    text-decoration:none;
+    font-family: 'Raleway Dots', cursive;
+    text-decoration: none;
 
 }
-img{
+
+img {
     height: 50px;
     width: 59px;
     margin-right: 70px;
 }
-#sobre{
+
+#sobre {
+    grid-area: sobre;
     height: 500px;
     background-color: rgb(59, 59, 59);
     font-size: larger;
 }
-#sobre>img{
+
+#sobre>img {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     opacity: 100%;
 }
-#footer{
-    
-}
-.informacoes_geo{
+
+.informacoes_geo {
+    grid-area: footer;
     height: 240px;
     padding-top: 20px;
     padding-left: 30px;
