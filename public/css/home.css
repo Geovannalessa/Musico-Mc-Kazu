@@ -267,6 +267,8 @@ ul {
 #link-youtube {
     grid-area: youtube;
     background-color: rgba(24, 26, 23, 1);
+    background-color: rgba(17, 16, 16, 0.858);
+
     height: 90px;
     width: 100%;
     display: flex;
@@ -290,17 +292,41 @@ img {
 
 #sobre {
     grid-area: sobre;
-    height: 500px;
-    background-color: rgb(59, 59, 59);
-    font-size: larger;
+    height: 350px;
+    background-color: rgba(60, 84, 56, 0.119);
+
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(123, 114, 114);
+    text-align: center;
+
+    border-top: 5px ridge rgba(48, 44, 44, 0.271);
+    border-bottom: 5px ridge rgba(48, 44, 44, 0.271);
+
+    /* border-bottom: 7px rgba(0, 0, 0, 0.278) ridge; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#frase{
+    font-size: 17px;
+    color: rgb(123, 114, 114);
 }
 
-#sobre>img {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 100%;
+#icones_jonas{
+   border-top: rgba(255, 255, 255, 0.017) 1px solid;
+}
+#icones_jonas>a>img:hover{
+    background-color: rgba(210, 241, 245, 0.083);
+    
+}
+#instagram{
+    height: 38px;
+    width: 50px;
+    margin-bottom: 3px;
+    padding: 4px;
 }
 
 .informacoes_geo {
@@ -356,7 +382,7 @@ line-height: 48px;
     color: white;
     padding-bottom: 15px;
     font-size: 10px;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.221);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.406);
 }
 #icons{
     display: flex;
@@ -371,7 +397,7 @@ line-height: 48px;
     height: 30px;
     width: 35px;
     animation-name: animacao_git;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-direction:alternate;
     animation-iteration-count: infinite;
 }
@@ -387,7 +413,7 @@ line-height: 48px;
     width: 22px;
     padding: 4px 8px 4px 8px;
     animation-name: animacao_linkedin;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-direction:alternate;
     animation-iteration-count: infinite;
     }
