@@ -60,6 +60,23 @@ body {
         'youtube'
         'sobre'
         'footer';
+        overflow-y:scroll ;
+}
+body::-webkit-scrollbar {
+    /* width: 40px; */
+    background-color: #000000d3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f7ececc6;
+    /* border-radius: 20px; */
+    border: 1px solid #1212123d;
+    height: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #7777772b;
+    width: 1px;
 }
 
 header {
