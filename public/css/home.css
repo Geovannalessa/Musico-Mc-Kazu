@@ -1,50 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
-@font-face {
-    font-family: 'Press Start 2P' ;
-    src: url("./PressStart2P-Regular.ttf");
-}
-/* @media (max-width:1171px) {
-    main{
-        grid-template-columns: 1fr;
-        grid-template-areas:"header" "letras_e_som" "youtube" "sobre" "footer";
-    } */
-@media(max-width:1161px) {
-    #letras_e_som{
-        display: flex;
-        flex-direction:column-reverse;
-    }
-    #letras_e_som>#letras{
-        width: 100%;
-    }
-    #letras_e_som>#som{
-        padding: 30px;
-        height: 500px;
-        width: 100%;
-    }
-} 
-@media(max-width:501px){
-    header{
-        height: 20px;
-    }
-    header>#primeira_linha{
-        display: inline-block;
-        flex-direction: column;
-    }
-    header>#primeira_linha>#titulo{
-        font-size: 35px;
-    }
-    header>#primeira_linha>#salve{
-        font-size:small;
-    }
-    header>#conteiner_opcoes{
-        gap: 2px;
-    }
-    header>#conteiner_opcoes>li>a{
-        margin-top: 20px;
-        font-size: small;
-        gap: 2px;
-    }
-}
+
 
 body {
     background-color: rgb(16, 16, 16);
@@ -68,7 +22,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #f7ececc6;
+    background-color: #dedcdca1;
     /* border-radius: 20px; */
     border: 1px solid #1212123d;
     height: 20px;
@@ -78,7 +32,6 @@ body::-webkit-scrollbar-track {
     background: #7777772b;
     width: 1px;
 }
-
 header {
     grid-area: header;
     background-color: rgb(2 2 2 / 96%);
@@ -141,7 +94,7 @@ header {
 #conteiner_opcoes>li>a {
     display: flex;
     justify-content: center;
-    margin-top: 170px;
+    margin-top: 160px;
     text-decoration: none;
     color: white;
     margin-left: 20px;
@@ -457,3 +410,63 @@ line-height: 48px;
         opacity:0% ;
     }
 }
+
+@media(max-width:991px) {
+    
+    #letras_e_som{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    #letras_e_som>#letras{
+        width: 100%;
+    }
+    #letras_e_som>#som{
+        padding: 30px;
+        height: 500px;
+        width: auto;
+    }
+} 
+@media(max-width:588px){
+    header>#conteiner_opcoes,#primeira_linha{
+        height: fit-content;
+    }
+    header>#conteiner_opcoes>li>a{
+        margin-top: 20px;
+        font-size: 14px;
+        gap: 2px;
+        width: fit-content;
+    }
+}
+@media(max-width:501px){
+    header{
+        height: 20px;
+    }
+    header>#primeira_linha{
+        display: inline-block;
+        flex-direction: column;
+    }
+    header>#primeira_linha>#titulo{
+        font-size: 35px;
+    }
+    header>#primeira_linha>#salve{
+        font-size:small;
+    }
+    header>#conteiner_opcoes{
+        gap: 2px;
+    }
+    header>#conteiner_opcoes>li>a{
+        margin-top: 20px;
+        font-size: small;
+        gap: 2px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@font-face {
+    font-family: 'Press Start 2P' ;
+    src: url("./PressStart2P-Regular.ttf");
+}
+/* @media (max-width:1171px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas:"header" "letras_e_som" "youtube" "sobre" "footer";
+    } */
