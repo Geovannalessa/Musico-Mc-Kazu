@@ -27,47 +27,54 @@ form{
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.578);
+    background-color: rgba(0, 0, 0, 0.685);
     border: 2px rgb(255, 255, 255) solid;
     box-shadow:13px  16px 10px 2px rgba(1, 65, 1, 0.438);
 }
-
 #ola{
-    font-size: 40px;
-    color: aliceblue;
-    padding-top:60px;
-}
-#ola{
+    margin-top: 10px;
+    letter-spacing: 6px;
+    color: rgba(240, 248, 255, 0.743);
+    font-weight: bolder;
     border-top: 1px solid rgb(1, 65, 1);
+    font-size: 35px;
+    margin-bottom: 20px;
     animation-name: animacaoNome;
     animation-iteration-count: infinite;
     animation-duration:8s;
     animation-delay:2s;
 }
-#nome{
+form>label{
+    color: aliceblue;
+    font-size: 25px;
+}
+form>input{
     background-color:rgba(0, 0, 0, 0.185);
     border: solid rgba(97, 100, 136, 0.334) 1px;
     height: 30px;
-    margin: 50px auto;
-    width: 300px;
+    margin: 10px auto;
+    width: 400px;
     font-family: 'Cormorant Garamond', serif;
     color: rgb(66, 103, 57);
     font-size: 30px;
     text-align: center;
     font-weight: bold;
 }
-#nome:focus{
-   background-color: rgba(128, 128, 128, 0);
-   border: 1px solid transparent;
-}
-#entrar{
+#cadastrar{
     border: none;
     font-family: 'Caesar Dressing', cursive;
     cursor: pointer;
     font-size: 20px;
 }
-#entrar:focus{
+#cadastrar:focus{
     background-color: rgba(240, 248, 255, 0.754);
+}
+form>a{
+    letter-spacing: 3px;
+    align-items: flex-end;
+    padding-top: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    color: rgba(240, 248, 255, 0.368);
 }
 @keyframes animacaoNome {
     0%{
